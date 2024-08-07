@@ -1,0 +1,33 @@
+#Title
+{
+    text-align: center;
+
+}
+
+body
+{
+    font-family: Verdana;
+    text-align: center;
+}
+
+.button
+{
+    font-size: 30px;
+    padding: 5px 25px;
+    color: rgb(172, 13, 13);
+    background-color: rgb(35, 35, 35);
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.25s;
+}
+button:hover
+{
+    background-color: black;
+}
+
+#DiceNum
+{
+    display: block;
+    text-align: center;
+    font-size: 80px;
+}
