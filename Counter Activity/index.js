@@ -12,6 +12,11 @@ Decreasebtn.onclick = function()
 {
     count--;
     Counter.textContent = count;
+
+    if(count < 0)
+    {
+        Counter.style.color = "red";
+    }
 }
 
 // -- RESETS THE COUNTER --
@@ -19,6 +24,8 @@ Resetbtn.onclick = function()
 {
     count = 0;
     Counter.textContent = count;
+
+    Counter.style.color = "white";
 }
 
 // -- INCREASES THE COUNTER --
@@ -26,4 +33,9 @@ Increasebtn.onclick = function()
 {
     count++;
     Counter.textContent = count;
+
+    if(count > 0)
+    {
+        Counter.style.color = "green";
+    }
 }
