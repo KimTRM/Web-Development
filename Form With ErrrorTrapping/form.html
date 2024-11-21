@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html>
+<title>Registration Form</title>
+
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="css/bootstrap.min.css" rel="stylesheet">
+
+<body>
+    <div class="container-fluid">
+        <div class="col-md-12">
+
+            <div id="borrower-input" class="box">
+                <div class="container">
+                    <form class="needs-validation" novalidate>
+                        <div class="row g-4">
+                            <div class="col-md-12 text-center">
+                                <h3 class="text-black">Registration Form</h3>
+                            </div>
+
+                            <div class="col-md-4">
+                                <div class="form-floating mb-1">
+                                    <input type="text" class="form-control" id="txtFirstName" required placeholder="-">
+                                    <label for="floatingInput">Given Name</label>
+                                    <div class="invalid-feedback">First Name Required</div>
+                                </div>
+                            </div>
+
+
+                            <div class="col-md-3">
+                                <div class="form-floating mb-3">
+                                    <input type="text" class="form-control" required id="txtLastName" required placeholder="-">
+                                    <label for="floatingInput">Last Name</label>
+                                    <div class="invalid-feedback">Last Name Required</div>
+                                </div>
+                            </div>
+
+                            <div class="col-md-4">
+                                <div class="form-floating mb-3">
+                                    <input type="text" class="form-control" required id="txtMiddleName" required placeholder="-">
+                                    <label for="floatingInput">Middle Name</label>
+                                    <div class="invalid-feedback">Middle Name is required</div>
+                                </div>
+                            </div>
+
+
+
+                            <div class="col-md-4">
+                                <div class="form-floating mb-3">
+                                    <input type="number" class="form-control" required id="txtContact" required placeholder="-">
+                                    <label for="floatingInput">Contact Number</label>
+                                    <div class="invalid-feedback">Contact Number is Required</div>
+                                </div>
+                            </div>
+
+
+                            <div class="col-md-4">
+                                <div class="form-floating mb-3">
+                                    <input type="date" class="form-control" required id="txtBday" required placeholder="-">
+                                    <label for="floatingInput">Bday</label>
+                                    <div class="invalid-feedback">Bday is Required</div>
+                                </div>
+                            </div>
+
+                            <div class="col-md-4">
+                                <div class="form-floating mb-1">
+                                    <div class="form-floating">
+                                        <select class="form-select" id="cboGender" required aria-label="Floating label select example">
+                                                    <option selected value="">Select Gender</option>
+                                                    <option value="Male">Male</option>
+                                                    <option  value="Female">Female</option>
+                                            </select>
+                                        <label for="floatingSelect">Gender</label>
+                                        <div class="invalid-feedback">Please select Gender</div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-md-4">
+                                <div class="form-floating mb-3">
+                                    <input type="number" class="form-control" required id="txtParentContact" required placeholder="-">
+                                    <label for="floatingInput">Parent Contact</label>
+                                    <div class="invalid-feedback">Parent Contact is required</div>
+                                </div>
+                            </div>
+
+
+                            <div class="col-md-4">
+                                <div class="form-floating mb-3">
+                                    <input type="number" class="form-control" required id="txtStudentNumber" required placeholder="-">
+                                    <label for="floatingInput">LRN</label>
+                                    <div class="invalid-feedback">LRN is Required</div>
+                                </div>
+                            </div>
+
+                            <div class="col-md-4">
+                                <div class="form-floating mb-3">
+                                    <input type="text" class="form-control" required id="txtAddress" required placeholder="-">
+                                    <label for="floatingInput">Address</label>
+                                    <div class="invalid-feedback">Address is Required</div>
+                                </div>
+                            </div>
+
+                            <div class="col-md-4">
+                                <div class="form-floating mb-3">
+                                    <input type="email" class="form-control" required id="txtEmailAddress" required placeholder="-">
+                                    <label for="floatingInput">Email Address</label>
+                                    <div class="invalid-feedback">Email Address is Required</div>
+                                </div>
+                            </div>
+
+                            <div class="col-md-4">
+                                <div class="form-floating mb-1">
+                                    <div class="form-floating">
+                                        <select class="form-select" id="cboSchool" required aria-label="Floating label select example">
+                          <option selected disabled value="">Select School</option>
+                          <option  value="CSNHS">CSNHS</option>
+                          <option selected value="">UNC</option>
+                          <option selected value="">BISCAST</option>
+                                            
+                                            </select>
+                                        <label for="floatingSelect">School</label>
+                                        <div class="invalid-feedback">Please select school</div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-md-4">
+                                <div class="form-floating mb-1">
+                                    <div class="form-floating">
+                                        <select class="form-select" id="cboSection" required aria-label="Floating label select example">
+                                <option disabled selected value="">Select Section</option>
+                                <option  value="aaa">12-PROG-1</option>
+                                <option  value="bbb">11-PROG-1</option>
+                    </select>
+                                        <label for="floatingSelect">Section</label>
+                                        <div class="invalid-feedback">Please select section</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                        </div>
+
+
+                        <div class="col-md-4">
+                            <div class="form-floating mb-3">
+                                <input type="file" class="form-control" required id="txtPicture" required placeholder="-">
+                                <label for="floatingInput">Picture</label>
+                                <div class="invalid-feedback">Picture is required</div>
+                            </div>
+                        </div>
+
+
+
+
+
+
+                        <!-- <div class="col-md-3">
+                        </div> -->
+
+                        <div class="col-md-3 mx-auto ">
+                            <button class="btn btn-primary form-control" id="btnSubmit" type="submit">Submit form</button>
+                        </div>
+
+                        <div class="col-md-3">
+                        </div>
+                </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    </div>
+</body>
+
+</html>
+
+<script type="text/javascript" src="js/form.js"></script>

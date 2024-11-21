@@ -1,0 +1,21 @@
+body{
+    background-color: rgb(41, 41, 41);
+}
+
+#title{
+    text-align: center;
+    font-size: 50px;
+    color: white;
+}
+
+#player{
+    text-align: center;
+    font-size: 50px;
+    color: white;
+}
+
+#enemy{
+    text-align: center;
+    font-size: 50px;
+    color: white;
+}
