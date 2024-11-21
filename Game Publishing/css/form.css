@@ -1,0 +1,57 @@
+@font-face
+{
+    font-family: 'Font';
+    src: url(../res/font/x12y16pxMaruMonica.ttf)
+}
+
+body
+{
+    font-family: 'Font';
+
+    background-color: rgb(77, 70, 118);
+    background-image:  url('../res/images/Background.gif');
+
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.box-container
+{
+    
+    background-color: rgba(32, 31, 31, 0.5);
+
+    outline: auto;
+    outline-color: rgb(255, 255, 255);
+    outline-width: 5px;
+    margin: 75px;
+    padding: 0px;
+    outline-style: double;
+}
+
+.GameInformation
+{
+    min-width: 10px;
+
+
+    background-color: rgba(72, 72, 72, 0.679);
+
+    outline: auto;
+    outline-color: rgb(255, 255, 255);
+    
+    margin: 10px;
+    padding: 10px;
+    outline-style: dashed;
+}
+
+.GameUpload
+{
+    background-color: rgba(72, 72, 72, 0.679);
+
+    outline: auto;
+    outline-color: rgb(255, 255, 255);
+    
+    margin: 10px;
+    padding: 10px;
+    outline-style: dashed;
+}

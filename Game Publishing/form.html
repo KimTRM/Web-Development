@@ -1,11 +1,128 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Game Publishing</title>
+
+    <link rel="icon" href="res/images/KLTL Logo.png">
+
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="css/form.css" />
 </head>
+
 <body>
-    
+    <div class="container-fluid">
+        <div class="box-container">
+            <div class="container">
+                <form class="needs-validation" novalidate>
+                    <div class="row g-4">
+
+                        <div class="col-md-12 text-center">
+                            <h1>Game Publishing</h1>
+                        </div>
+
+                        <div class="GameInformation">
+
+                            <h3>Game Information</h3>
+
+                            <div class="row g-4">
+                                <div class="row g-4">
+
+                                    <!-- Game Title -->
+                                    <div class="col-md-4">
+                                        <div class="form-floating">
+                                            <input type="text" class="form-control" id="txtGameTitle" required
+                                                placeholder="-" />
+                                            <label for="floatingInput">Game Title</label>
+                                            <div class="invalid-feedback">Game Title is required</div>
+                                        </div>
+                                    </div>
+
+                                    <!-- Game Genre -->
+                                    <div class="col-md-4">
+                                        <div class="form-floating">
+                                            <input list="data" class="form-control" id="txtGameTitle" required
+                                                placeholder="-" />
+                                            <label for="floatingInput">Game Genre</label>
+                                            <datalist id="data">
+                                                <option value="Action"></option>
+                                                <option value="Adventure"></option>
+                                                <option value="RPG"></option>
+                                                <option value="Simulation"></option>
+                                                <option value="Strategy"></option>
+                                            </datalist>
+
+                                            <div class="invalid-feedback">Game Genre is required</div>
+                                        </div>
+                                    </div>
+
+                                    <!-- Game Release Date -->
+                                    <div class="col-md-4">
+                                        <div class="form-floating">
+                                            <input type="datetime-local" class="form-control" id="txtGameTitle" required
+                                                placeholder="-" />
+                                            <label for="floatingInput">Date Release</label>
+                                            <div class="invalid-feedback">Game Release Date is required</div>
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                                <!-- Game Description -->
+                                <div class="col">
+                                    <div class="form-floating">
+                                        <textarea name="Game Description" class="form-control" id="txtGameDescription"required placeholder="-"></textarea>
+
+                                        <label for="floatingInput">Game Description</label>
+                                        <div class="invalid-feedback">Game Description is required</div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="GameUpload">
+                            <div class="row g-4">
+
+                                <h3>Game Upload</h3>
+
+                                <div class="col-md-4">
+                                    <div class="form-floating mb-3">
+                                        <input type="file" class="form-control" required id="txtPicture" required
+                                            placeholder="-">
+                                        <label for="floatingInput">Game Icon</label>
+                                        <div class="invalid-feedback">Game Icon is required</div>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-4">
+                                    <div class="form-floating mb-3">
+                                        <input type="file" multiple class="form-control" required id="txtPicture"
+                                            required placeholder="-">
+                                        <label for="floatingInput">Game File</label>
+                                        <div class="invalid-feedback">Game File is required</div>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="col-md-3 mx-auto ">
+                            <button class="btn btn-primary form-control" id="btnSubmit" type="submit">Submit form</button>
+                        </div>
+
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
 </body>
+
 </html>
+
+
+<script type="text/javascript" src="js/form.js"></script>
